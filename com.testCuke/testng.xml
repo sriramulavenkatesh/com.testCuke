@@ -3,7 +3,7 @@
 <suite name="sample cucumber test">
 <test name="testOne">
 <classes>
-<class name="cucumberOptions.TestRunner"></class>
+<class name="testForJenkins.TestEx"></class>
 </classes>
 </test>
 </suite>
