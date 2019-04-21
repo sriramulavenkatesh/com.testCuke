@@ -22,7 +22,7 @@ public class ResizeTest {
 		action.moveToElement(resizableRight).clickAndHold(resizableRight).moveByOffset(100, 50).build().perform();
 		Thread.sleep(10000);
 	}
-	@Test
+	
 	public void sampleTwo() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "D:\\Automation Stuff\\Chrome driver\\chromedriver.exe");
 		driver = new ChromeDriver();
@@ -35,7 +35,23 @@ public class ResizeTest {
 		int y = tableEleOne.getLocation().getY();
 		Thread.sleep(5000);
 		action.moveToElement(tableEleOne).clickAndHold(tableEleOne).moveByOffset(80, y).release().build().perform();
-		Thread.sleep(5000);
+		Thread.sleep(5000);	
+		
+	}
+	
+	@Test
+	public void sampleFour() {
+		System.setProperty("webdriver.chrome.driver", "D:\\Automation Stuff\\Chrome driver\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("https://www.cricbuzz.com/");
+		driver.manage().window().maximize();
+		/*WebElement home = driver.findElement(By.xpath("//a[text()='Home']"));
+		new Actions(driver).moveByOffset(home.getLocation().getX()+594, home.getLocation().getY()).click().perform();*/
+		WebElement striker = driver.findElement(By.xpath("//a[text()='Super Striker']"));
+		new Actions(driver).moveByOffset(striker.getLocation().getX()-550, striker.getLocation().getY()).click().perform();
+		
+		
+		
 		
 		
 	}
