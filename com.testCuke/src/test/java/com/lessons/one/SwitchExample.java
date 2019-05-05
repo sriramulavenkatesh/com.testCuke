@@ -6,8 +6,8 @@ import org.testng.annotations.Test;
 
 public class SwitchExample {
 	
-	@Test
-	public void sample() {
+	
+	/*public void sample() {
 		
 		Scanner s = new Scanner(System.in);
 		System.out.println("Enter a string = ");
@@ -26,6 +26,6 @@ public class SwitchExample {
 		
 		}
 		
-	}
+	}*/
 
 }

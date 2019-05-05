@@ -15,7 +15,7 @@
 		<maven.compiler.source>1.6</maven.compiler.source>
 		<maven.compiler.target>1.6</maven.compiler.target>
 	</properties>
-    <build>
+	<build>
 		<plugins>
 
 			<plugin>
@@ -52,6 +52,11 @@
 			<artifactId>junit-jupiter-api</artifactId>
 			<version>5.4.0</version>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4</version>
 		</dependency>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
